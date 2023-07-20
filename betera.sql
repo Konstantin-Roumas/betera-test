@@ -1,6 +1,6 @@
 SELECT *
 FROM bets
-LEFT JOIN events
+INNER JOIN events
 USING(event_id)
 WHERE is_free_bet == 0
  AND event_stage == 'Prematch'
